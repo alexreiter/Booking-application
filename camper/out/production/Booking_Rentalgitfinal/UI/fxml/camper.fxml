@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Controller">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0" nodeOrientation="INHERIT" pickOnBounds="true">
+         <image>
+            <Image url="@/image/16973.jpg" />
+         </image>
+      </ImageView>
+      <Pane fx:id="customerPage" layoutX="117.0" layoutY="84.0" opacity="0.87" prefHeight="433.0" prefWidth="666.0" style="-fx-background-color: white;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#03a678" height="40.0" layoutX="444.0" layoutY="148.0" stroke="#03a678" strokeType="OUTSIDE" width="34.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#03a678" height="40.0" layoutX="444.0" layoutY="220.0" stroke="#03a678" strokeType="OUTSIDE" width="34.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#03a678" height="40.0" layoutX="444.0" layoutY="295.0" stroke="#03a678" strokeType="OUTSIDE" width="34.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#03a678" height="40.0" layoutX="211.0" layoutY="358.0" stroke="#03a678" strokeType="OUTSIDE" width="34.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#03a678" height="40.0" layoutX="213.0" layoutY="254.0" stroke="#03a678" strokeType="OUTSIDE" width="34.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#03a678" height="40.0" layoutX="212.0" layoutY="200.0" stroke="#03a678" strokeType="OUTSIDE" width="34.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#03a678" height="40.0" layoutX="212.0" layoutY="148.0" stroke="#03a678" strokeType="OUTSIDE" width="34.0" />
+            <JFXDatePicker fx:id="dp" accessibleRole="NODE" layoutX="31.0" layoutY="132.0" promptText="Pick up date" />
+            <JFXDatePicker fx:id="dp_checkout" accessibleRole="NODE" layoutX="31.0" layoutY="198.0" promptText="Drop off date" />
+            <JFXTextField fx:id="nameTextfield" layoutX="245.0" layoutY="148.0" prefHeight="40.0" prefWidth="180.0" promptText="Name" style="-fx-background-color: #bdc3c7;" unFocusColor="#fcfafa" />
+            <FontAwesomeIconView fill="#fcf8f8" glyphName="USER" layoutX="221.0" layoutY="176.0" size="20" text="" />
+            <JFXTextField fx:id="phoneTextfield" layoutX="245.0" layoutY="200.0" prefHeight="40.0" prefWidth="180.0" promptText="Phone" style="-fx-background-color: #bdc3c7;" unFocusColor="#fcfafa" />
+            <JFXTextField fx:id="streetTextfield" layoutX="245.0" layoutY="254.0" prefHeight="40.0" prefWidth="180.0" promptText="Street" style="-fx-background-color: #bdc3c7;" unFocusColor="#fcfafa" />
+            <JFXTextField fx:id="zipTextfield" layoutX="245.0" layoutY="307.0" prefHeight="40.0" prefWidth="180.0" promptText="zip" style="-fx-background-color: #bdc3c7;" unFocusColor="#fcfafa" />
+            <JFXTextField fx:id="emailTextfield" layoutX="245.0" layoutY="359.0" prefHeight="40.0" prefWidth="180.0" promptText="Email" style="-fx-background-color: #bdc3c7;" unFocusColor="#fcfafa" />
+            <JFXTextField fx:id="licenseTextfield" layoutX="477.0" layoutY="148.0" prefHeight="40.0" prefWidth="180.0" promptText="Driver's License nr" style="-fx-background-color: #bdc3c7;" unFocusColor="#fcfafa" />
+            <JFXTextField fx:id="issueTextfield" layoutX="477.0" layoutY="220.0" prefHeight="40.0" prefWidth="180.0" promptText="Date of issue" style="-fx-background-color: #bdc3c7;" unFocusColor="#fcfafa" />
+            <JFXTextField fx:id="expiryTextfield" layoutX="477.0" layoutY="295.0" prefHeight="40.0" prefWidth="180.0" promptText="Date of expiry" style="-fx-background-color: #bdc3c7;" unFocusColor="#fcfafa" />
+            <FontAwesomeIconView fill="#f5f4f4" glyphName="MOBILE_PHONE" layoutX="222.0" layoutY="232.0" size="30" text="" />
+            <FontAwesomeIconView fill="#eeeaea" glyphName="WINDOWS" layoutX="220.0" layoutY="385.0" size="20" />
+            <FontAwesomeIconView fill="#eeeaea" glyphName="WHEELCHAIR" layoutX="449.0" layoutY="176.0" size="25" text="" />
+            <FontAwesomeIconView fill="#eeeaea" glyphName="THUMBS_ALT_UP" layoutX="452.0" layoutY="248.0" size="25" />
+            <FontAwesomeIconView fill="#eeeaea" glyphName="THUMBS_ALT_DOWN" layoutX="450.0" layoutY="323.0" size="25" />
+            <JFXButton fx:id="btn_next" buttonType="RAISED" layoutX="552.0" layoutY="370.0" onAction="#btnNextPage" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #03A678;" text="NEXT" textFill="#f0f4f3">
+               <font>
+                  <Font name="Agency FB" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="checkTextfield" layoutX="14.0" layoutY="284.0" prefHeight="40.0" prefWidth="180.0" promptText="Existing customer" style="-fx-background-color: #bdc3c7;" unFocusColor="#fcfafa" />
+            <JFXButton fx:id="btnCheck" buttonType="RAISED" layoutX="54.0" layoutY="356.0" onAction="#btnCheck" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #03A678;" text="CHECK" textFill="#f0f4f3">
+               <font>
+                  <Font name="Agency FB" size="24.0" />
+               </font>
+            </JFXButton>
+            <Line endX="99.5350341796875" layoutX="101.0" layoutY="253.0" startX="-90.0" stroke="#ffb61e" strokeWidth="2.0" />
+            <Line endX="200.0" layoutX="151.0" layoutY="261.0" startX="-97.99609375" startY="-0.10546875" stroke="#ffb61e" strokeWidth="2.0" style="-fx-rotate: 90;" />
+            <JFXButton fx:id="btn_save" buttonType="RAISED" layoutX="440.0" layoutY="370.0" onAction="#btn_save" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #ffb61e;" text="SAVE" textFill="#f0f4f3">
+               <font>
+                  <Font name="Agency FB" size="24.0" />
+               </font>
+            </JFXButton>
+            <Pane accessibleRole="NODE" opacity="0.71" prefHeight="96.0" prefWidth="666.0" style="-fx-background-color: #03a680;">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#03a678" height="30.0" layoutX="318.0" layoutY="74.0" stroke="#03a678" strokeType="OUTSIDE" style="-fx-rotate: 45;" width="30.0" />
+                  <Label layoutX="298.0" layoutY="60.0" text="Register" textFill="#f2eeee">
+                     <font>
+                        <Font name="Agency FB Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Circle fill="#03a678" layoutX="333.0" layoutY="33.0" radius="27.0" stroke="#f8f7f7" strokeType="INSIDE" strokeWidth="2.0" />
+                  <FontAwesomeIconView fill="#fcf9f9" glyphName="USER_SECRET" layoutX="320.0" layoutY="43.0" size="30" />
+               </children>
+            </Pane>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#03a678" height="40.0" layoutX="211.0" layoutY="307.0" stroke="#03a678" strokeType="OUTSIDE" width="34.0" />
+            <FontAwesomeIconView fill="#f5f4f4" glyphName="MAP" layoutX="220.0" layoutY="333.0" size="20" />
+            <FontAwesomeIconView fill="WHITE" glyphName="MAP_PIN" layoutX="221.0" layoutY="282.0" size="25" />
+         </children>
+      </Pane>
+      <Pane fx:id="autoCamperPage" layoutX="117.0" layoutY="84.0" opacity="0.87" prefHeight="433.0" prefWidth="666.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <FontAwesomeIconView fill="#eeeaea" glyphName="WINDOWS" layoutX="219.0" layoutY="396.0" size="20" />
+            <JFXButton fx:id="btn_price" buttonType="RAISED" layoutX="531.0" layoutY="370.0" onAction="#btnPriceCalc" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #03A678;" text="CALCULATE" textFill="#f0f4f3">
+               <font>
+                  <Font name="Agency FB" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_codriver" buttonType="RAISED" layoutX="56.0" layoutY="186.0" onAction="#btnCodriver" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #03A678;" text="Register" textFill="#f0f4f3">
+               <font>
+                  <Font name="Agency FB" size="24.0" />
+               </font>
+            </JFXButton>
+            <Line endX="99.5350341796875" layoutX="101.0" layoutY="253.0" startX="-90.0" stroke="#ffb61e" strokeWidth="2.0" />
+            <Line endX="200.0" layoutX="151.0" layoutY="261.0" startX="-97.99609375" startY="-0.10546875" stroke="#ffb61e" strokeWidth="2.0" style="-fx-rotate: 90;" />
+            <Label layoutX="23.0" layoutY="107.0" opacity="0.49" prefHeight="65.0" prefWidth="163.0" style="-fx-background-color: #03a678;" text="You can register a co-driver here if you wish" textAlignment="CENTER" textFill="#f2efef" wrapText="true">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Label>
+            <TableView fx:id="autoCamperTableView" layoutX="213.0" layoutY="117.0" prefHeight="237.0" prefWidth="435.0">
+              <columns>
+                <TableColumn fx:id="col1" editable="false" prefWidth="129.0" sortable="false" text="model" />
+                <TableColumn fx:id="col2" editable="false" prefWidth="63.0" sortable="false" text="mileage" />
+                  <TableColumn fx:id="col3" editable="false" prefWidth="83.0" sortable="false" text="Beds" />
+                  <TableColumn fx:id="col4" editable="false" prefWidth="70.0" sortable="false" text="heating" />
+                  <TableColumn fx:id="col5" editable="false" prefWidth="89.0" sortable="false" text="price" />
+              </columns>
+            </TableView>
+            <JFXRadioButton fx:id="btn_radio2" layoutX="15.0" layoutY="381.0" text="Super Cover Plus">
+               <font>
+                  <Font name="Agency FB" size="18.0" />
+               </font></JFXRadioButton>
+            <JFXRadioButton fx:id="btn_radio1" layoutX="14.0" layoutY="286.0" text="Basic Insurance">
+               <font>
+                  <Font name="Agency FB" size="18.0" />
+               </font></JFXRadioButton>
+            <Label layoutX="20.0" layoutY="309.0" opacity="0.49" prefHeight="65.0" prefWidth="180.0" style="-fx-background-color: #03a678;" text="Includes Collision Damage Waiver and Theft protection Insurance + 1000 DKK self-risk payment" textFill="#f5f3f3" visible="false" wrapText="true">
+               <font>
+                  <Font name="Agency FB Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="404.0" opacity="0.49" prefHeight="20.0" prefWidth="82.0" style="-fx-background-color: #03a678;" text="All included" textFill="#f5f3f3" visible="false" wrapText="true">
+               <font>
+                  <Font name="Agency FB Bold" size="16.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btn_back" buttonType="RAISED" layoutX="370.0" layoutY="370.0" onAction="#btnBack" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #ffb61e;" text="BACK" textFill="#f0f4f3">
+               <font>
+                  <Font name="Agency FB" size="24.0" />
+               </font>
+            </JFXButton>
+            <Pane prefHeight="96.0" prefWidth="666.0" style="-fx-background-color: #03a678;">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#03a678" height="30.0" layoutX="317.0" layoutY="79.0" stroke="#03a678" strokeType="OUTSIDE" style="-fx-rotate: 45;" width="30.0" />
+                  <Circle fill="#03a678" layoutX="332.0" layoutY="33.0" radius="27.0" stroke="#f2efef" strokeType="INSIDE" strokeWidth="2.0" />
+                  <FontAwesomeIconView fill="#f2eded" glyphName="BUS" layoutX="319.0" layoutY="43.0" size="30" />
+                  <Label layoutX="284.0" layoutY="57.0" text="Reservation" textFill="#f5f5f5">
+                     <font>
+                        <Font name="Agency FB Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="pricePage" layoutX="117.0" layoutY="84.0" opacity="0.87" prefHeight="433.0" prefWidth="666.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <Pane accessibleRole="NODE" opacity="0.71" prefHeight="96.0" prefWidth="666.0" style="-fx-background-color: #03a680;">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#03a678" height="30.0" layoutX="318.0" layoutY="74.0" stroke="#03a678" strokeType="OUTSIDE" style="-fx-rotate: 45;" width="30.0" />
+                  <Label layoutX="298.0" layoutY="60.0" text="Register" textFill="#f2eeee">
+                     <font>
+                        <Font name="Agency FB Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Circle fill="#03a678" layoutX="333.0" layoutY="33.0" radius="27.0" stroke="#f8f7f7" strokeType="INSIDE" strokeWidth="2.0" />
+                  <FontAwesomeIconView fill="#fcf9f9" glyphName="USER_SECRET" layoutX="320.0" layoutY="43.0" size="30" />
+               </children>
+            </Pane>
+            <JFXTextField fx:id="weekTextfield" editable="false" focusTraversable="false" layoutX="165.0" layoutY="135.0" prefHeight="35.0" prefWidth="197.0" style="-fx-background-color: #d3d2d7;" unFocusColor="WHITE" />
+            <Label layoutX="60.0" layoutY="135.0" prefHeight="35.0" prefWidth="105.0" style="-fx-background-color: #ffb61e;" text="   Number of weeks" textFill="#fcf9f9">
+               <font>
+                  <Font name="Agency FB Bold" size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="typeTextfield" editable="false" focusTraversable="false" layoutX="165.0" layoutY="185.0" prefHeight="35.0" prefWidth="197.0" style="-fx-background-color: #d3d2d7;" unFocusColor="WHITE" />
+            <Label layoutX="60.0" layoutY="185.0" prefHeight="35.0" prefWidth="105.0" style="-fx-background-color: #ffb61e;" text="   Type of camper" textFill="#fcf9f9">
+               <font>
+                  <Font name="Agency FB Bold" size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="discountTextfield" editable="false" focusTraversable="false" layoutX="165.0" layoutY="235.0" prefHeight="35.0" prefWidth="197.0" style="-fx-background-color: #d3d2d7;" unFocusColor="WHITE" />
+            <Label layoutX="60.0" layoutY="235.0" prefHeight="35.0" prefWidth="105.0" style="-fx-background-color: #ffb61e;" text="        Discount" textAlignment="CENTER" textFill="#fcf9f9">
+               <font>
+                  <Font name="Agency FB Bold" size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="insuranceTextfield" editable="false" focusTraversable="false" layoutX="165.0" layoutY="285.0" prefHeight="35.0" prefWidth="197.0" style="-fx-background-color: #d3d2d7;" unFocusColor="WHITE" />
+            <Label layoutX="60.0" layoutY="285.0" prefHeight="35.0" prefWidth="105.0" style="-fx-background-color: #ffb61e;" text="       Insurance" textFill="#fcf9f9">
+               <font>
+                  <Font name="Agency FB Bold" size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="priceTextfield" editable="false" focusTraversable="false" layoutX="453.0" layoutY="135.0" prefHeight="35.0" prefWidth="197.0" style="-fx-background-color: #d3d2d7;" unFocusColor="WHITE" />
+            <Label layoutX="383.0" layoutY="135.0" prefHeight="35.0" prefWidth="70.0" style="-fx-background-color: #03a678;" text="  Your price" textFill="#fcf9f9">
+               <font>
+                  <Font name="Agency FB Bold" size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="depositTextfield" editable="false" focusTraversable="false" layoutX="453.0" layoutY="185.0" prefHeight="35.0" prefWidth="197.0" style="-fx-background-color: #d3d2d7;" unFocusColor="WHITE" />
+            <Label layoutX="383.0" layoutY="185.0" prefHeight="35.0" prefWidth="70.0" style="-fx-background-color: #03a678;" text="    Deposit" textFill="#fcf9f9">
+               <font>
+                  <Font name="Agency FB Bold" size="16.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btn_book" buttonType="RAISED" layoutX="536.0" layoutY="369.0" onAction="#book" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #03a678;" text="BOOK" textFill="#fcfcfc">
+               <font>
+                  <Font name="Agency FB" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_back3" buttonType="RAISED" layoutX="60.0" layoutY="369.0" onAction="#btn_back3" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #ffb61e;" text="BACK" textFill="#fffefe">
+               <font>
+                  <Font name="Agency FB" size="22.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,62 @@
+
+.text-field{
+    -fx-background-color:  #044f67;
+    -fx-border-color:  #19b5fe;
+    -fx-border-radius: 20;
+    -fx-border-width: 2;
+    -fx-text-fill: white;
+}
+
+.table-view{
+-fx-alignment: center;
+}
+
+.table-row-cell{
+    -fx-cell-size: 50px;
+}
+
+.pane{
+    -fx-background-color:  #044F67;
+}
+
+.price-label {
+    -fx-font-family: "Agency FB";
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f2eeee;
+}
+
+.small_separator {
+    -fx-pref-width: 319px;
+    -fx-pref-height: 11px;
+}
+
+.btn-back2 {
+    -fx-background-color: #e2a809;
+    -fx-border-width: 2px;
+    -fx-font-family: "Agency FB";
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f2eeee;
+}
+
+.btn-red {
+    -fx-background-color: #C95430;
+    -fx-border-width: 2px;
+    -fx-font-family: "Agency FB";
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f2eeee;
+}
+.small_label {
+    -fx-background-color: #044f67;
+    -fx-font-family: "Agency FB";
+    -fx-font-size: 17px;
+    -fx-text-fill: #f2eeee;
+}
+
+.datepicker {
+    -fx-border-color: none;
+    -fx-text-fill: none;
+}
+
